@@ -119,11 +119,6 @@ body {
   border: 1px solid #333;
 }
 
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
 /*--- footer ---*/
 
 .page-footer {
