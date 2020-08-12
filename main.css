@@ -108,8 +108,8 @@ body {
 }
 
 .project .btn {
-  background-color: #589b37;
-  border: 1px solid #589b37;
+  background-color: #45a5ac;
+  border: 1px solid #fff;
   color: #fff;
   margin-top: 20px;
 }
@@ -117,6 +117,11 @@ body {
 .project .btn:hover {
   background-color: #333;
   border: 1px solid #333;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
 }
 
 /*--- footer ---*/

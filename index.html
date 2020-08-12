@@ -38,7 +38,7 @@
             <a class="nav-link" href="#">Travel</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Art</a>
+            <a class="nav-link" href="#">Drawings</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Blog</a>
@@ -68,7 +68,16 @@
     <div class="container project">
       <h1>Projects I Worked On</h1>
 
-      <!--Add filters section in here-->
+      <!--filter buttons-->
+      <div style="padding-bottom: 15px;" id="filters">
+        <button class="btn active" onclick="filterSelection('all')">All</button>
+        <button class="btn" onclick="filterSelection('research')">
+          Research
+        </button>
+        <button class="btn" onclick="filterSelection('class')">Class</button>
+        <button class="btn" onclick="filterSelection('side')">Side</button>
+        <button class="btn" onclick="filterSelection('misc')">Misc</button>
+      </div>
 
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12">
