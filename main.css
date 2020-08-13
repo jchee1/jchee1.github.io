@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: #f2f6e9;
+  background: #e2e2ec;
 }
 
 /*--- navigation bar ---*/
@@ -102,6 +102,21 @@ button:focus {
   color: #ffa500;
 }
 
+.active {
+  color: #636363;
+  border: none;
+  border-bottom: 0.15rem dotted;
+  outline: none;
+}
+
+:active {
+  cursor: url('cursor-onclick.png'), auto;
+}
+
+a:active {
+  cursor: url('cursor-onclick.png'), auto;
+}
+
 /*--- Projects Section ---*/
 
 #work {
@@ -115,7 +130,11 @@ button:focus {
 }
 
 .work-block {
-  display: initial;
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 .thumbnail {

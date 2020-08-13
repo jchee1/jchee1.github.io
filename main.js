@@ -2,46 +2,54 @@ $(document).ready(function () {
   $(".header").height($(window).height());
 });
 
+
+/*filter stuff*/
+var btnContainer = document.getElementById('filters');
+var btns = btnContainer.getElementsByClassName("filter-button");
+
+document.addEventListener("DOMContentLoaded", function() {
+  actives = document.getElementsByClassName("active");
+  for (var i = 0; i < actives.length; i++) {
+    actives[i].className.replace(" .active", "");
+  }
+
+  if (localStorage.getItem("filter") == null) {
+    localStorage.setItem("filter", "all");
+    document.getElementById("all").className += " active";
+    filterSelection("all");
+  }
+
+  else {
+    document.getElementById(localStorage.getItem("filter")).className += " active";
+    filterSelection(localStorage.getItem("filter"));
+  }
+
+});
+
+
+
 function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  if (c == "all") {
+    localStorage.setItem("filter", "all");
+    c = "";
   }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
+  else {
+    localStorage.setItem("filter", c);
+  }
+  var x = document.getElementsByClassName("work-block");
+  for (var i = 0; i < x.length; i++) {
+    x[i].classList.remove("show");
+    if (x[i].className.indexOf(c) > -1) {
+      x[i].classList.add("show");
     }
   }
+
 }
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("filters");
-var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
+  btns[i].addEventListener("click", function() {
+    var currentSelected = document.getElementsByClassName("active")[0];
+    currentSelected.className = currentSelected.className.replace(" active", "");
     this.className += " active";
   });
 }
