@@ -79,7 +79,55 @@ body {
   color: #000;
 }
 
+/*--- filter---*/
+button {
+  background-color: transparent;
+}
+
+button:focus {
+  outline:0;
+}
+
+.filter-button {
+  border: none;
+  outline: none;
+  text-align: center;
+  margin-right: 3rem;
+  padding-left: 0;
+  color: #aeaeae;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.filter-button:hover {
+  color: #ffa500;
+}
+
 /*--- Projects Section ---*/
+
+#work {
+  padding-top: 2rem;
+}
+
+.work-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.work-block {
+  display: initial;
+}
+
+.thumbnail {
+  width: 100%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail:hover {
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+
 
 .project {
   margin: 4em auto;
@@ -125,6 +173,7 @@ body {
   background-color: #222;
   color: #ccc;
   padding: 60px 0 30px;
+  width:100%;
 }
 
 .footer-update {

@@ -14,6 +14,7 @@
     <!--CSS sheet-->
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
+
   <body>
     <!-- Navigation Bar--->
     <nav class="navbar navbar-expand-md">
@@ -66,55 +67,66 @@
 
     <!---Projects (have a href to pages talking abt project-->
     <div class="container project">
-      <h1>Projects I Worked On</h1>
+      <h1>Projects</h1>
 
       <!--filter buttons-->
-      <div class="filterbtn" id="filters">
-        <button class="btn active" onclick="filterSelection('all')">All</button>
-        <button class="btn" onclick="filterSelection('research')">
-          Research
-        </button>
-        <button class="btn" onclick="filterSelection('class')">Class</button>
-        <button class="btn" onclick="filterSelection('side')">Side</button>
-        <button class="btn" onclick="filterSelection('misc')">Misc</button>
+      <div class="col-md-12 col-lg-6" style="padding-bottom: 15px;">
+
+        <div class="row" id="filters">
+
+          <button onclick="filterSelection('all')" class="filter-button" id="all">All</button>
+
+          <button onclick="filterSelection('code')" class="filter-button" id="research">Research</button>
+
+          <button onclick="filterSelection('design')" class="filter-button" id="class">Class</button>
+
+          <button onclick="filterSelection('misc')" class="filter-button" id="side">Side</button>
+
+        </div>
+
       </div>
+      
 
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12 class">
-          <h3 class="project-title">Project 1</h3>
-          <img src="images/tmp.jpg" class="img-fluid" />
-          <p>desc 1</p>
-        </div>
 
-        <div class="col-lg-4 col-md-4 col-sm-12 class">
-          <h3 class="project-title">Project 2</h3>
-          <img src="images/tmp.jpg" class="img-fluid" />
-          <p>desc 2</p>
-        </div>
+      <div class="col-md-12 col-lg-10" id="work">
+        <div class="work-wrapper">
 
-        <div class="col-lg-4 col-md-4 col-sm-12 side">
-          <h3 class="project-title">Project 3</h3>
-          <img src="images/tmp.jpg" class="img-fluid" />
-          <p>desc 3</p>
-        </div>
+          <div class="work-block research">
+            <div class="thumbnail-wrapper">
+              <a href="#"><img class="thumbnail" src="images/tmp.jpg" alt=""></a>
+            </div>
+            <div class="description">
+              <h3><a href="#">ARBlockbot →</a></h3>
+              <p>An augmented reality application for simplified programming and robotics education. </p>
+            </div>
+          </div>
 
-        <div class="col-lg-4 col-md-4 col-sm-12 side">
-          <h3 class="project-title">Project 4</h3>
-          <img src="images/tmp.jpg" class="img-fluid" />
-          <p>desc 4</p>
-        </div>
+          <div class="work-block class">
+            <div class="thumbnail-wrapper">
+              <a href="#"><img class="thumbnail" src="images/tmp.jpg" alt=""></a>
+            </div>
+            <div class="description">
+              <h3><a href="#">Rehack →</a></h3>
+              <p>Founding, designing, and organizing the first ever reverse hackathon for students.</p>
+            </div>
+          </div>
 
-        <div class="col-lg-4 col-md-4 col-sm-12 misc">
-          <h3 class="project-title">Project 5</h3>
-          <img src="images/tmp.jpg" class="img-fluid" />
-          <p>desc 5</p>
-        </div>
+          <div class="work-block side">
+            <div class="thumbnail-wrapper">
+              <a href="#"><img class="thumbnail" src="images/tmp.jpg" alt=""></a>
+            </div>
+            <div class="description">
+              <h3><a href="#">DesertRanger VR →</a></h3>
+              <p>Nighttime desert drone-hunting virtual reality experience for the Oculus Rift. </p>
+            </div>
+          </div>
 
-        <div class="col-lg-4 col-md-4 col-sm-12 misc">
-          <h3 class="project-title">Project 6</h3>
-          <img src="images/tmp.jpg" class="img-fluid" />
-          <p>desc 6</p>
         </div>
+      </div>
+    </div>
+      
+      
+      
 
         <!-- some form stuff can save for later
         <div class="col-lg-4 col-md-4 col-sm-12">
@@ -145,8 +157,9 @@
             name=""
           />
         </div>
-      --></div>
-    </div>
+      </div>
+    -->
+    
 
     <!--Footer-->
     <!--Add social media icons in footer (do it similar to kimberlyhorton.com site-->
