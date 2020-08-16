@@ -231,8 +231,9 @@ a:active {
 
 .fa {
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  background: #f1f1f1;
+  height: 40px;
   margin: 10px;
   border-radius: 30%;
   box-shadow: 0 5px 15px -5px #00000070;
@@ -254,14 +255,20 @@ a:active {
 /* Set a specific color for each brand */
 
 /* Facebook */
-.fa-facebook {
+.fa-facebook-f {
   background: #3B5998;
   color: white;
+  display: inline-block;
+  width: 41px;
+  height: 41px;
 }
 
-/* Twitter 
+/* Twitter */
 .fa-twitter {
   background: #55ACEE;
   color: white;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  
 }
-*/
