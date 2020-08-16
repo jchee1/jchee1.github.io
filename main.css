@@ -146,15 +146,31 @@ a:active {
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2);
 }
 
-
-
-.project {
-  margin: 4em auto;
-  padding: 1em;
+/*column stuff*/
+.col-container {
   position: relative;
+  width: 50%;
+}
+.column-mid {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.project-title {
+.col-container:hover .column-img {
+  opacity: 0.3;
+}
+
+.col-container:hover .column-mid {
+  opacity: 1;
+}
+
+.column-title {
   color: #333;
   font-family: 'Alegreya', serif;
   font-size: 2rem;
@@ -163,29 +179,18 @@ a:active {
   text-transform: uppercase;
 }
 
-.project img {
-  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  margin-bottom: 16px;
+.column-img {
+  padding-bottom: 20px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
-.project .form-control,
-.project input {
-  border-radius: 0;
-}
 
-.project .btn {
-  background-color: #45a5ac;
-  border: 1px solid #fff;
-  color: #fff;
-  margin-top: 20px;
-}
 
-.project .btn:hover {
-  background-color: #333;
-  border: 1px solid #333;
-}
 
 /*--- footer ---*/
 
@@ -195,8 +200,6 @@ a:active {
   padding: 60px 0 30px;
   width:100%;
 }
-
-
 
 /*--- media queries ---*/
 
@@ -248,8 +251,6 @@ a:active {
   cursor: pointer;
   transition: .5s;
 }
-
-
 
 .soc li:before{
   position: absolute;
