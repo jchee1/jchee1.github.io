@@ -156,8 +156,9 @@ a:active {
 
 .project-title {
   color: #333;
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-family: 'Alegreya', serif;
+  font-size: 2rem;
+  font-weight: bold;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
