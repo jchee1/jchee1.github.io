@@ -20,6 +20,7 @@ body {
 .nav-link {
   margin-right: 1em !important;
   font-size: large;
+  font-family: 'Lato', serif;
 }
 
 .nav-link:hover {
