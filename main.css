@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   background: #e2e2ec;
+  height: 100%;
 }
 
 /*--- navigation bar ---*/
@@ -197,8 +198,9 @@ a:active {
 .page-footer {
   background-color: #222;
   color: #ccc;
-  padding: 60px 0 30px;
   width:100%;
+  height: 190px;
+  bottom: 0;
   
 }
 
@@ -234,7 +236,7 @@ a:active {
 }
 
 .soc {
-  display: flex;
+  display: flex; 
   justify-content: center;
 }
 
