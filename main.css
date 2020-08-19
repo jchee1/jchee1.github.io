@@ -324,4 +324,23 @@ a:active {
   text-shadow: 0 0 15px #2867B2;
 }
 
+/*travel */
+.gallery {
+  margin: 10px 50px;
+  flex: 1;
+  left: 3%;
+  position: relative;
+}
+.gallery img {
+  transition: 1s;
+  padding: 10px;
+  width: 400px;
+  height: 300px;
+  display: inline-block;
+}
+.gallery img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
 
