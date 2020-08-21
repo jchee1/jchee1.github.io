@@ -34,7 +34,7 @@ body {
 /*--- header ---*/
 
 .header {
-  background-image: url("images/profile_1.JPG");
+  background-image: url("/images/profile_1.JPG");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -323,11 +323,26 @@ a:active {
   transition: 1s;
   padding: 10px;
   width: 400px;
-  
   display: inline-block;
 }
 .gallery img:hover {
   filter: grayscale(100%);
   transform: scale(1.1);
 }
-
+/*drawings*/
+.art {
+  margin: 10px 50px;
+  flex: 1;
+  left: 10%;
+  position: relative;
+}
+.art img {
+  transition: 1s;
+  padding: 10px;
+  width: 450px;
+  display: inline-block;
+}
+.art img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
