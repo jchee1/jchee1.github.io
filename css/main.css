@@ -164,8 +164,8 @@ a:active {
 
 .column-title {
   color: #333;
-  font-family: 'Alegreya', serif;
-  font-size: 2rem;
+  font-family: 'Alegreya';
+  font-size: 2.45rem;
   font-weight: bold;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -324,8 +324,10 @@ a:active {
 .gallery img {
   transition: 1s;
   padding: 10px;
-  width: 400px;
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }
 .gallery img:hover {
   filter: grayscale(100%);
